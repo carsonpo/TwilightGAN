@@ -16,7 +16,7 @@ if __name__ == '__main__':
     visualizer = Visualizer(opt)
     total_steps = 0
 
-    for epoch in range(opt.epoch_count, opt.niter + opt.niter_decay + 1):
+    for epoch in range(opt.epoch_count+100, opt.niter + opt.niter_decay + 1):
         epoch_start_time = time.time()
         iter_data_time = time.time()
         epoch_iter = 0
